@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
-
+import { ConnectButton } from "@mysten/dapp-kit";
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false)
     return (
@@ -23,7 +23,8 @@ export default function Header() {
                         </div>
                         <div className="col flex items-center gap-6">
                             <div className="cut-wrapper">
-                                <button className="bg-color3 py-3 px-4 corners-cut cursor-pointer" onClick={() => setIsOpen(!isOpen)}>Connect Wallet</button>
+                                <ConnectButton />
+                                {/* <button className="bg-color3 py-3 px-4 corners-cut cursor-pointer" onClick={() => setIsOpen(!isOpen)}>Connect Wallet</button> */}
                             </div>
                         </div>
                     </div>

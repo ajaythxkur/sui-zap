@@ -1,0 +1,13 @@
+[package]
+name = "zap"
+edition = "2024.beta" 
+
+[dependencies]
+
+[addresses]
+mellow_farm = "0x0"
+
+[dev-dependencies]
+
+[dev-addresses]
+
